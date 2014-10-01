@@ -1,19 +1,16 @@
 package persistent;
 
-import pl.btbw.core.annotation.ObjectOverride;
 import pl.btbw.core.annotation.ValueOverride;
 
-public class Article {
+public class Category {
 
 	@ValueOverride(key = "NAME")
 	private String name;
 
+	@ValueOverride(key = "DESCRIPTION")
 	private String description;
 
-	@ObjectOverride(key = "CATEGORY")
-	private Category category = new Category();
-
-	public Article() {
+	public Category() {
 	}
 
 	public String getName() {
@@ -24,7 +21,11 @@ public class Article {
 		return description;
 	}
 
-	public Category getCategory() {
-		return category;
+	@Override
+	public String toString() {
+		return "Category{" +
+				"name='" + name + '\'' +
+				", description='" + description + '\'' +
+				'}';
 	}
 }

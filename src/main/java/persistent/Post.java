@@ -1,6 +1,6 @@
 package persistent;
 
-import pl.btbw.core.BtbwText;
+import pl.btbw.core.annotation.BtbwText;
 
 public class Post {
 

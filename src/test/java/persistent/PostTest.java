@@ -1,7 +1,7 @@
 package persistent;
 
 import org.junit.Test;
-import pl.btbw.core.BtbwText;
+import pl.btbw.core.annotation.BtbwText;
 
 import java.lang.reflect.Field;
 
